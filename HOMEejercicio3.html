@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="EDAlibros">
+    <meta name="description" content="EDAlibros Editorial">
+    <meta name="viewport" content="width=devide-with, inistial-scale=1.0">
+    <meta name="keywords" content="editorial, edalibros, libros">
+    <title>EDAlibros Editorial</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head> 
+
+<body>
+    <header class="header">
+    <!--Search and RRSS buttons-->
+    <div class="icon-bar">
+        <a href="https://www.instagram.com"><img src="RRSS/instagram.png" alt="Instagram" style="width:15px;height:15px;border:0;"></a>
+        <a href="https://www.facebook.com"><img src="RRSS/logo-de-facebook.png" alt="Facebook" style="width:15px;height:15px;border:0;"></a>
+        <a href="https://twitter.com/explore"><img src="RRSS/twitter.png" alt="Twitter" style="width:15px;height:15px;border:0;"></a>
+<form>
+  <input class="searchbar-line" type="text" name="seach">
+  <label for="search"><a buttom href="#search"><img src="RRSS/lupa1.png" alt="Buscador" style="width:15px;height:15px;border:0;"></a></label>
+</form>
+         
+        
+      </div>
+         
+<!--NavBAR-->
+        <nav class="serif">
+            <ul>
+              <div>
+                <li><a href="#home" style="float:left"><b>EDAlibros</b></a></li>
+                <li><a href="#laeditorial">La editorial</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Libros
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Todos los títulos</a>
+                      <a href="#">Últimas publicaciones</a>
+                      <a href="#">Los días terrestres</a>
+                      <a href="#">El pie de la letra</a>
+                      <a href="#">El espejo y la máscara</a>
+                      <a href="#">Seguro azar</a>
+                      <a href="#">NorteySur</a>
+                      <a href="#">Lecciones de cosas</a>
+                      <a href="#">Las musarañas</a>
+                      <a href="#">Las lágrimas de Eros</a>
+                      <a href="#">La cabeza a pájaros</a>
+                    </div>
+                  </div>
+                <li><a href="#noticias">Noticias</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Contacto
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#">Suscríbete a nuestra editorial</a>
+                      <a href="#">Distribuidores</a>
+                      <a href="#">Contacto</a>
+                    </div>
+                  </div>
+                <form style="float:right" action="/action_page.php">
+                    <input class="shoppingbar" type="text" placeholder="Tu cesta está vacía           0,00€" name="search">
+                    <!--<a buttom href="#shoppingcart"><img src="RRSS/carrito.png" alt="carrito" style="width:18px;height:18px;border:0;"></a>-->
+                </form>
+              </div>
+            </ul>
+        </nav>
+    </header>
+
+<!--Carousel-->
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="Imagenes_libros/slide2.jpg" alt="News" width="100%" height="100%">
+      <div class="text">
+          <p class="serifcarousel"><i>Sombras del poniente</i></p>
+          <p class="sanserifcarousel"><i>Ignacio Moreno Gozálvez</i></p>
+          <p class="sanserifcarousel"><i>Ver más</i></p>
+        </div>
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="Imagenes_libros/slide2.jpg" alt="News" width="100%" height="100%">
+      <div class="text">Caption Two</div>
+    </div>
+    
+    <div class="mySlides fade">
+        <img src="Imagenes_libros/slide2.jpg" alt="News" width="100%" height="100%">
+      <div class="text">Caption Three</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+        <p class="serif"; style="text-align:center;">ÚLTIMAS PUBLICACIONES</p>
+
+        <div class="grid-container">
+            <div class="item1">
+                <p><img float:left src="Imagenes_libros/sombras-del-poniente.jpg" alt="Libro sombras del poniente" class="imgleft" style="width:335px; margin-right:210px;">
+                <h1><b><i>Sombras del Poniente</i></b></h1>
+                <h2><i>Ignacio Moreno Gozálvez</i></h2>
+                <h3>16,00 €</h3>
+                </p>
+                <p class= "sanserif-book1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quidem dolorem doloribus, 
+                nam asperiores ut quibusdam incidunt similique rem excepturi quasi, provident accusantium aperiam vitae necessitatibus officia. 
+                Dolorem facere vel quibusdam sequi suscipit labore, expedita, harum rem, saepe totam vero adipisci commodi consequuntur cum 
+                libero reiciendis eveniet deserunt? Magni iusto, natus aperiam dignissimos vero non soluta atque, pariatur dolore magnam debitis 
+                aliquam dolorem. Est assumenda tenetur, suscipit dignissimos expedita mollitia, velit debitis rerum dolor eveniet optio iusto 
+                praesentium!
+    
+                </p>
+                <button class="button button1">Ver más</button>
+                <button class="button button1">Comprar</button>
+            </div>
+            
+            <div class="grid-item">
+                <p><img float:left src="Imagenes_libros/sombras-del-poniente.jpg" alt="Libro sombras del poniente" class="imgleft" style="width:170px; margin-right:35px;">
+                <h1><b><i>Sombras del Poniente</i></b></h1>
+                <h2><i>Ignacio Moreno Gozálvez</i></h2>
+                <h3>16,00 €</h3>
+                </p>
+                <p class= "sanserif">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Id autem amet nobis voluptas obcaecati. Ratione officiis in obcaecati maxime 
+                    cumque labore optio provident enim ad ab et, alias voluptate quibusdam!
+                </p>
+                <button class="button button1">Ver más</button>
+                <button class="button button1">Comprar</button>
+            </div>
+
+            <div class="grid-item" class="col">
+                <p><img float: left src="Imagenes_libros/sombras-del-poniente.jpg" alt="Libro sombras del poniente" class="imgleft" style="width:170px; margin-right:35px;">
+                <h1><b><i>Sombras del Poniente</i></b></h1>
+                <h2><i>Ignacio Moreno Gozálvez</i></h2>
+                <h3>16,00 €</h3>
+                </p>
+                <p class= "sanserif">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Id autem amet nobis voluptas obcaecati. Ratione officiis in obcaecati maxime 
+                    cumque labore optio provident enim ad ab et, alias voluptate quibusdam!
+                </p>
+                <button class="button button1">Ver más</button>
+                <button class="button button1">Comprar</button>
+            </div>
+
+            <div class="grid-item">
+                <p><img float: left src="Imagenes_libros/sombras-del-poniente.jpg" alt="Libro sombras del poniente" class="imgleft" style="width:170px; margin-right:35px;">
+                <h1><b><i>Sombras del Poniente</i></b></h1>
+                <h2><i>Ignacio Moreno Gozálvez</i></h2>
+                <h3>16,00 €</h3>
+                </p>
+                <p class= "sanserif">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Id autem amet nobis voluptas obcaecati. Ratione officiis in obcaecati maxime 
+                    cumque labore optio provident enim ad ab et, alias voluptate quibusdam!
+                </p>
+                <button class="button button1">Ver más</button>
+                <button class="button button1">Comprar</button>
+            </div>
+
+            <div class="grid-item">
+                <p><img float: left src="Imagenes_libros/sombras-del-poniente.jpg" alt="Libro sombras del poniente" class="imgleft" style="width:170px; margin-right:35px;">
+                <h1><b><i>Sombras del Poniente</i></b></h1>
+                <h2><i>Ignacio Moreno Gozálvez</i></h2>
+                <h3>16,00 €</h3>
+                </p>
+                <p class= "sanserif">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Id autem amet nobis voluptas obcaecati. Ratione officiis in obcaecati maxime 
+                    cumque labore optio provident enim ad ab et, alias voluptate quibusdam!
+                </p>
+                <button class="button button1">Ver más</button>
+                <button class="button button1">Comprar</button>
+            </div>
+
+            <div class="grid-item">
+                <p><img float: left src="Imagenes_libros/sombras-del-poniente.jpg" alt="Libro sombras del poniente" class="imgleft" style="width:170px; margin-right:35px;">
+                <h1><b><i>Sombras del Poniente</i></b></h1>
+                <h2><i>Ignacio Moreno Gozálvez</i></h2>
+                <h3>16,00 €</h3>
+                </p>
+                <p class= "sanserif">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Id autem amet nobis voluptas obcaecati. Ratione officiis in obcaecati maxime 
+                    cumque labore optio provident enim ad ab et, alias voluptate quibusdam!
+                </p>
+                <button class="button button1">Ver más</button>
+                <button class="button button1">Comprar</button>
+            </div>
+
+            <div class="grid-item">
+                <p><img float: left src="Imagenes_libros/sombras-del-poniente.jpg" alt="Libro sombras del poniente" class="imgleft" style="width:170px; margin-right:35px;">
+                <h1><b><i>Sombras del Poniente</i></b></h1>
+                <h2><i>Ignacio Moreno Gozálvez</i></h2>
+                <h3>16,00 €</h3>
+                </p>
+                <p class= "sanserif">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Id autem amet nobis voluptas obcaecati. Ratione officiis in obcaecati maxime 
+                    cumque labore optio provident enim ad ab et, alias voluptate quibusdam!
+                </p>
+                <button class="button button1">Ver más</button>
+                <button class="button button1">Comprar</button>
+            </div>
+
+            <div class="grid-item">
+                <p><img float: left src="Imagenes_libros/sombras-del-poniente.jpg" alt="Libro sombras del poniente" class="imgleft" style="width:170px; margin-right:35px;">
+                <h1><b><i>Sombras del Poniente</i></b></h1>
+                <h2><i>Ignacio Moreno Gozálvez</i></h2>
+                <h3>16,00 €</h3>
+                </p>
+                <p class= "sanserif">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Id autem amet nobis voluptas obcaecati. Ratione officiis in obcaecati maxime 
+                    cumque labore optio provident enim ad ab et, alias voluptate quibusdam!
+                </p>
+                <button class="button button1">Ver más</button>
+                <button class="button button1">Comprar</button>
+            </div>
+
+            <div class="grid-item">
+                <p><img float: left src="Imagenes_libros/sombras-del-poniente.jpg" alt="Libro sombras del poniente" class="imgleft" style="width:170px; margin-right:35px;">
+                <h1><b><i>Sombras del Poniente</i></b></h1>
+                <h2><i>Ignacio Moreno Gozálvez</i></h2>
+                <h3>16,00 €</h3>
+                </p>
+                <p class= "sanserif">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Id autem amet nobis voluptas obcaecati. Ratione officiis in obcaecati maxime 
+                    cumque labore optio provident enim ad ab et, alias voluptate quibusdam!
+                </p>
+                <button class="button button1">Ver más</button>
+                <button class="button button1">Comprar</button>
+            </div>
+        </div>  
+<footer class="footer">
+<div class="footer-grid-container">
+    <div class="col1">
+        <p>EDAlibros 2020</p>
+        <p>Urb. Torremuelle<br>Pueblo Andaluz F1 - 29630<br>Benalmádena Costa - Málaga</p>
+        <p>T. +34 952 44 84 20</p>
+    </div>
+    <div class="col2">
+    <p>Suscríbete a nuestra NEWSLETTER</p>
+    <p class="serif">si quieres que te informemos de las novedades<br>que publicamos y las activiades que organizamos.</p>
+    <form action="/action_page.php">
+        <input type="text" placeholder="introduce tu e-mail" name="email">
+        <input type="submit" value="Submit">
+    </form>
+    <p>
+    <form>
+        <input type="checkbox" id="myCheck" onclick="alert('click event occured')">
+        <a href="#privacidad">Acepto la política de privacidad</a>
+    </form>  
+
+    <script>
+    function myFunction() {
+    document.getElementById("myCheck").click();
+        }
+    </script>
+    </p>
+    </div>
+</div>
+</footer>
+
+</body>
+</html>
