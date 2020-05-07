@@ -113,7 +113,7 @@
     list-style-type: none;
     margin: 0;
     padding:15px 5px 10px 0px;
-    overflow: hidden;
+    overflow: visible;
     background-color: #ffffffd5;
     position: relative;
     top: 100;
@@ -385,10 +385,13 @@
 /*Footer syle*/
     .footer {
     font-family: "Merriweather", serif;
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: lighter; 
     background-color: #f8ead8;  
     }
     .footer-grid-container {
+    font-family: "Merriweather", serif;
+    font-size: 14px;;
     display: grid;
     grid-template-columns: auto auto;
     background-color:none;
