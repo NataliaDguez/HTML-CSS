@@ -66,19 +66,33 @@
     text-decoration: underline;
     }
 
-/*Header style
-    .header {
-        position: fixed;
-        z-index: 2;
+/*Header style*/
+.header-grid-container {
+    font-family: "Merriweather", serif;
+    font-size: 14px;;
+    display: grid;
+    grid-template-columns: 100%;
+    background-color:none;
+    padding: 0px;
+    margin: 0px 10px 5px 0px;
+    padding: 0;
+    background-color:none;
+    }              
+    .row1 {
+    background-color:none;
+    text-align: right; 
     }
-*/
+    .row2 { 
+    background-color:none;
+    text-align: center; 
+    } 
 /*Search&MEDIA bar*/
     .icon-bar {
     width: auto; /* Set a specific width */
     background-color: #ffffff9f;
     padding:0px 0px 20px 0px;
     width: 100%;
-    position: relative;
+    position:relative;
     z-index: 3;
     }
   
